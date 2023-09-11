@@ -1,6 +1,6 @@
 <?php
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "datamahasiswa");
+$conn = mysqli_connect("localhost", "root", "", "datasiswa");
 
 function query($query) {
     global $conn;
