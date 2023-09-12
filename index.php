@@ -42,7 +42,7 @@ if( isset($_POST["cari"]) ) {
 
       .table{
         border-color: black;
-        background-color: #D9D9D9;
+        background-color: lightblue;
 
       }
 

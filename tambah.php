@@ -42,6 +42,7 @@ if( isset($_POST["submit"]) ) {
             margin-top: 40px;
             background-color: #FFFFFF;
             box-shadow: 0 0 5px 0 whitesmoke;
+            background-color: lightblue;
         }
 
         form > *  {
@@ -59,6 +60,16 @@ if( isset($_POST["submit"]) ) {
             color:black;
             text-align: center;
             padding-bottom:20px;
+            padding-top: 3px;
+        }
+
+        option{
+            text-align: center;
+        }
+
+        .judulkls{
+            color: lightgrey;
+            text-align: center;
         }
 
         .row.g-3{
@@ -70,7 +81,7 @@ if( isset($_POST["submit"]) ) {
         }
 
         .col-10 input:hover{
-            background-color: transparent;
+            background-color: whitesmoke;
         }
 
         .col-10{
@@ -103,7 +114,7 @@ if( isset($_POST["submit"]) ) {
 </head>
 <body> 
     <div class="container">
-            <h2>Tambah Data Mahasiswa</h2>
+            <h2>Tambah Data Siswa</h2>
         <form action="" method="post">
 
             <ul>
@@ -126,8 +137,26 @@ if( isset($_POST["submit"]) ) {
                     <div class="col-10" for="agama">
                         <input type="text" name="agama" id="agama"class="form-control" placeholder="Agama" aria-label="agama" required>
                     </div>
-                    <div class="col-10" for="kelas_jurusan">
-                        <input type="text" name="kelas_jurusan" id="kelas_jurusan"class="form-control" placeholder="Kelas Jurusan" aria-label="kelas_jurusan" required>
+                    <div class="col-10">
+                        <select name="kelas_jurusan" id="kelas_jurusan" class="form-control">
+                        <option name="kelas_jurusan" id="kelas_jurusan" class="judulkls">Click untuk Memilih Kelas!</option>
+                            <!-- KELAS TKJ XII-->
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TKJ 1</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TKJ 2</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TKJ 3</option>
+                            <!-- KELAS RPL XII-->
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII PPLG 1</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII PPLG 2</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII PPLG 3</option>
+                            <!-- KELAS TBSM XII -->
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TBSM 1</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TBSM 2</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TBSM 3</option>
+                            <!-- KELAS TKRO XII-->
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TKRO 1</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TKRO 2</option>
+                            <option name="kelas_jurusan" id="kelas_jurusan">XII TKRO 3</option>
+                        </select>
                     </div>
                 </div>
                 <div class="button">
