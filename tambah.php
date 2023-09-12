@@ -139,7 +139,7 @@ if( isset($_POST["submit"]) ) {
                     </div>
                     <div class="col-10">
                         <select name="kelas_jurusan" id="kelas_jurusan" class="form-control">
-                        <option name="kelas_jurusan" id="kelas_jurusan" class="judulkls">Click untuk Memilih Kelas!</option>
+                        <option name="kelas_jurusan" id="kelas_jurusan" class="judulkls" disabled selected>Click untuk Memilih Kelas!</option>
                             <!-- KELAS TKJ XII-->
                             <option name="kelas_jurusan" id="kelas_jurusan">XII TKJ 1</option>
                             <option name="kelas_jurusan" id="kelas_jurusan">XII TKJ 2</option>
